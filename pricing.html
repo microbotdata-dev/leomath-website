@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planuri și Prețuri — Matematică cu Leo</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pricing-hero { background: linear-gradient(135deg, #1a0a3c, #9b5de5); padding: 60px 24px; text-align: center; }
+    .pricing-hero h1 { color: #fff; font-size: 2.5rem; font-weight: 900; }
+    .pricing-hero p { color: rgba(255,255,255,.85); margin-top: 12px; font-size: 1.1rem; }
+    .pricing-section { padding: 60px 24px; }
+    .plans-full { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; max-width: 1000px; margin: 0 auto 60px; }
+    .plan-full { border: 2px solid #e8e0f8; border-radius: 24px; padding: 36px 28px; text-align: center; position: relative; }
+    .plan-full.featured { border-color: #9b5de5; background: linear-gradient(135deg, #f8f4ff, #fff); box-shadow: 0 12px 40px rgba(155,93,229,.2); }
+    .plan-full .badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #9b5de5; color: #fff; padding: 6px 18px; border-radius: 20px; font-size: .8rem; font-weight: 800; white-space: nowrap; }
+    .plan-full .name { font-size: 1.3rem; font-weight: 900; color: #1a0a3c; margin-bottom: 8px; }
+    .plan-full .price { font-size: 2.8rem; font-weight: 900; color: #ff6b35; }
+    .plan-full .price span { font-size: 1rem; color: #888; font-weight: 500; }
+    .plan-full .save { background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 10px; font-size: .8rem; font-weight: 700; display: inline-block; margin: 8px 0 20px; }
+    .plan-full ul { list-style: none; text-align: left; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    .plan-full ul li { font-size: .95rem; color: #555; padding: 4px 0; border-bottom: 1px solid #f0f0f0; }
+    .plan-btn { display: block; background: #9b5de5; color: #fff; padding: 14px; border-radius: 14px; font-weight: 900; transition: background .2s; }
+    .plan-btn:hover { background: #7a3fd0; }
+    .plan-btn.outline { background: transparent; border: 2px solid #9b5de5; color: #9b5de5; }
+    .faq-section { max-width: 700px; margin: 0 auto; padding: 0 24px 60px; }
+    .faq-section h2 { font-size: 1.8rem; font-weight: 900; color: #1a0a3c; margin-bottom: 32px; text-align: center; }
+    .faq-item { border-bottom: 1px solid #f0f0f0; padding: 20px 0; }
+    .faq-item h3 { font-size: 1rem; font-weight: 800; color: #1a0a3c; margin-bottom: 8px; }
+    .faq-item p { color: #666; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🦁 Matematică cu Leo</a>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="about.html">Despre</a></li>
+        <li><a href="pricing.html">Planuri</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pricing-hero">
+    <h1>Planuri simple și transparente 💎</h1>
+    <p>Alege planul potrivit pentru copilul tău. Poți anula oricând.</p>
+  </div>
+
+  <div class="pricing-section">
+    <div class="plans-full">
+      <!-- Gratuit -->
+      <div class="plan-full">
+        <div class="name">Gratuit</div>
+        <div class="price">$0</div>
+        <ul>
+          <li>✅ Exerciții de bază Clasa 2</li>
+          <li>✅ Leo & animații</li>
+          <li>✅ Muzică și sunete</li>
+          <li>✅ Stele și monede</li>
+          <li>❌ Toate lecțiile (Cls 3-4)</li>
+          <li>❌ Fără reclame</li>
+          <li>❌ Raport părinți</li>
+          <li>❌ Insigne exclusive</li>
+        </ul>
+        <a href="#" class="plan-btn outline">Descarcă Gratuit</a>
+      </div>
+
+      <!-- PRO Anual - Featured -->
+      <div class="plan-full featured">
+        <div class="badge">⭐ Cel mai bun preț</div>
+        <div class="name">PRO Anual</div>
+        <div class="price">$29.99<span>/an</span></div>
+        <div class="save">Economisești 37% față de lunar</div>
+        <ul>
+          <li>✅ Toate lecțiile Cls 2, 3, 4</li>
+          <li>✅ Exerciții nelimitate</li>
+          <li>✅ Fără reclame</li>
+          <li>✅ Raport detaliat părinți</li>
+          <li>✅ Insigne și trofee exclusive</li>
+          <li>✅ Skinuri speciale Leo 👑</li>
+          <li>✅ Suport prioritar</li>
+        </ul>
+        <a href="#" class="plan-btn">Abonează-te Anual</a>
+      </div>
+
+      <!-- Lunar -->
+      <div class="plan-full">
+        <div class="name">Lunar</div>
+        <div class="price">$3.99<span>/lună</span></div>
+        <ul>
+          <li>✅ Toate lecțiile Cls 2, 3, 4</li>
+          <li>✅ Exerciții nelimitate</li>
+          <li>✅ Fără reclame</li>
+          <li>✅ Raport detaliat părinți</li>
+          <li>❌ Insigne exclusive</li>
+          <li>❌ Skinuri speciale Leo</li>
+          <li>✅ Suport standard</li>
+        </ul>
+        <a href="#" class="plan-btn">Abonează-te Lunar</a>
+      </div>
+    </div>
+
+    <p style="text-align:center; color:#888; font-size:.9rem;">
+      Plata se face prin Google Play. Abonamentul se reînnoiește automat. Poți anula oricând.
+    </p>
+  </div>
+
+  <div class="faq-section">
+    <h2>Întrebări frecvente</h2>
+    <div class="faq-item">
+      <h3>Pot anula abonamentul oricând?</h3>
+      <p>Da! Poți anula oricând din Google Play → Abonamente. Nu există penalități sau taxe de anulare.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Cum se face plata?</h3>
+      <p>Plata se procesează în siguranță prin Google Play Billing. Acceptăm card bancar, PayPal și alte metode disponibile în contul tău Google.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Aplicația este sigură pentru copii?</h3>
+      <p>Da! Nu există chat, rețele sociale sau contact cu alți utilizatori. Datele sunt stocate local pe dispozitiv. Conformă cu COPPA și GDPR.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Câte dispozitive pot folosi cu un abonament?</h3>
+      <p>Abonamentul este legat de contul Google Play. Poți folosi aplicația pe dispozitivele asociate contului tău.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Ce se întâmplă cu progresul dacă anulez?</h3>
+      <p>Progresul (stele, monede, lecții completate) rămâne salvat pe dispozitiv. Vei reveni la planul Gratuit cu accesul la exercițiile de bază.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Există perioadă de probă gratuită?</h3>
+      <p>Planul Gratuit este disponibil permanent fără limită de timp. Poți testa aplicația cu exercițiile de bază înainte să decizi.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>🦁 Matematică cu Leo</strong><p>Matematica distractivă pentru clasele 2-4.</p><p>© 2026 Microbot</p></div>
+        <div><strong>Pagini</strong><ul><li><a href="about.html">Despre noi</a></li><li><a href="pricing.html">Planuri</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><strong>Legal</strong><ul><li><a href="privacy.html">Confidențialitate</a></li><li><a href="terms.html">Termeni</a></li></ul></div>
+        <div><strong>Contact</strong><p>✉️ microbot.data@gmail.com</p></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
