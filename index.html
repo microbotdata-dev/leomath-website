@@ -3,218 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matematică cu Leo 🦁</title>
-  <meta name="description" content="Matematica devine distractivă cu Leo Leul! Exerciții pentru clasele 2-4, stele, monede și premii. Descarcă gratuit!">
-  <link rel="icon" href="assets/logo.png">
-  <link rel="stylesheet" href="style.css">
+  <title>Microbot Apps 🦁📱</title>
+  <meta name="description" content="Aplicații educaționale făcute cu ❤️ de Microbot">
+  <link rel="icon" href="https://raw.githubusercontent.com/microbotdata-dev/leomath-website/main/leomath/assets/logo.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #1a0a3c 0%, #4a2c7a 50%, #1a0a3c 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .logo {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffd93d 0%, #ff6b35 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 48px;
+    }
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 800px;
+      margin: 0 auto 48px;
+    }
+    .app-card {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 24px;
+      padding: 32px 24px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .app-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.4);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .app-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+    .app-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .app-card p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .app-card .badge {
+      display: inline-block;
+      background: rgba(255,107,53,0.3);
+      color: #ffd93d;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .footer {
+      margin-top: 48px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: #ffd93d;
+    }
+    @media (max-width: 600px) {
+      .logo { font-size: 60px; }
+      h1 { font-size: 2rem; }
+      .apps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="logo">🦁📱</div>
+    <h1>Microbot Apps</h1>
+    <p class="subtitle">Aplicații educaționale făcute cu ❤️ în România</p>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-inner">
-      <a href="index.html" class="logo">🦁 Matematică cu Leo</a>
-      <ul>
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="about.html">Despre</a></li>
-        <li><a href="pricing.html">Planuri</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="apps-grid">
+      <a href="leomath/" class="app-card">
+        <div class="app-icon">🦁</div>
+        <span class="badge">🔥 Popular</span>
+        <h2>Matematică cu Leo</h2>
+        <p>Învață matematica pentru clasele 2-4 cu Leo Leul! Exerciții, stele și premii.</p>
+      </a>
+
+      <a href="leomemory/" class="app-card">
+        <div class="app-icon">📱</div>
+        <span class="badge">✨ Nou</span>
+        <h2>Leo Memory</h2>
+        <p>Memorază numerele de telefon ale contactelor tale prin quiz-uri interactive.</p>
+      </a>
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <span class="badge">📱 Disponibil pe Android</span>
-        <h1>Matematica devine<br><span class="accent">distractivă!</span> 🦁</h1>
-        <p>Leo Leul te însoțește în fiecare lecție, te încurajează și sărbătorește fiecare răspuns corect! Exerciții pentru clasele 2, 3 și 4.</p>
-        <div class="hero-btns">
-          <a href="#download" class="btn-primary">▶ Descarcă Gratuit</a>
-          <a href="pricing.html" class="btn-secondary">Vezi Planuri</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">📚 <strong>3 clase</strong></div>
-          <div class="stat">⭐ <strong>Stele & Monede</strong></div>
-          <div class="stat">🎵 <strong>Sunete & Animații</strong></div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="phone-mockup">
-          <span class="leo-big">🦁</span>
-          <p class="leo-speech">Bună! Sunt Leo!<br>Să învățăm împreună!</p>
-        </div>
-      </div>
+    <div class="footer">
+      <p>© 2026 <a href="mailto:microbot.data@gmail.com">Microbot</a></p>
     </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">De ce Matematică cu Leo?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon">🎮</div>
-          <h3>Învățare prin joc</h3>
-          <p>Exercițiile sunt prezentate ca mini-jocuri, astfel copilul uită că face matematică.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">⭐</div>
-          <h3>Sistem de recompense</h3>
-          <p>Stele, monede și insigne pentru fiecare lecție finalizată. Motivație garantată!</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📊</div>
-          <h3>Progres vizibil</h3>
-          <p>Părinții pot urmări progresul detaliat al copilului în raportul dedicat.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔒</div>
-          <h3>100% sigur</h3>
-          <p>Fără reclame pentru copii. Datele stocate local, fără servere externe.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🦁</div>
-          <h3>Leo — prietenul tău</h3>
-          <p>Mascota Leo încurajează, celebrează și motivează la fiecare pas.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📱</div>
-          <h3>Exerciții random</h3>
-          <p>Calcule noi la fiecare sesiune. Nu există plictiseală cu Leo!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="section section-purple">
-    <div class="container">
-      <h2 class="section-title white">Ce conține aplicația</h2>
-      <div class="features-grid">
-        <div class="feature">
-          <span>📗</span>
-          <div>
-            <strong>Clasa 2</strong>
-            <p>Adunare și scădere până la 20, tabla înmulțirii cu 2</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span>📘</span>
-          <div>
-            <strong>Clasa 3</strong>
-            <p>Tabla înmulțirii cu 3, 4, 5, 6 și împărțire simplă</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span>📙</span>
-          <div>
-            <strong>Clasa 4</strong>
-            <p>Tabla înmulțirii cu 7, 8, 9 și exerciții avansate</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span>🎵</span>
-          <div>
-            <strong>Muzică și sunete</strong>
-            <p>Melodie de fundal și efecte sonore prietenoase</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span>🏆</span>
-          <div>
-            <strong>Raport părinți</strong>
-            <p>Statistici detaliate despre progresul copilului (PRO)</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span>🔥</span>
-          <div>
-            <strong>Streak zilnic</strong>
-            <p>Urmărește câte zile consecutive înveți cu Leo</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING PREVIEW -->
-  <section class="section" id="download">
-    <div class="container">
-      <h2 class="section-title">Planuri simple și transparente</h2>
-      <div class="plans-preview">
-        <div class="plan">
-          <div class="plan-name">Gratuit</div>
-          <div class="plan-price">$0</div>
-          <ul>
-            <li>✅ Exerciții de bază</li>
-            <li>✅ Leo & animații</li>
-            <li>❌ Toate lecțiile</li>
-            <li>❌ Fără reclame</li>
-          </ul>
-        </div>
-        <div class="plan plan-featured">
-          <div class="plan-badge">⭐ Recomandat</div>
-          <div class="plan-name">PRO Anual</div>
-          <div class="plan-price">$29.99<span>/an</span></div>
-          <ul>
-            <li>✅ Toate lecțiile</li>
-            <li>✅ Fără reclame</li>
-            <li>✅ Raport părinți</li>
-            <li>✅ Insigne exclusive</li>
-          </ul>
-        </div>
-        <div class="plan">
-          <div class="plan-name">Lunar</div>
-          <div class="plan-price">$3.99<span>/lună</span></div>
-          <ul>
-            <li>✅ Toate lecțiile</li>
-            <li>✅ Fără reclame</li>
-            <li>✅ Raport părinți</li>
-            <li>❌ Insigne exclusive</li>
-          </ul>
-        </div>
-      </div>
-      <div class="cta-center">
-        <a href="#" class="btn-primary btn-large">🔽 Descarcă pe Google Play</a>
-        <p class="cta-note">Gratuit · Android · Fără card necesar</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <strong>🦁 Matematică cu Leo</strong>
-          <p>Matematica distractivă pentru clasele 2-4.</p>
-          <p>© 2026 Microbot</p>
-        </div>
-        <div>
-          <strong>Pagini</strong>
-          <ul>
-            <li><a href="about.html">Despre noi</a></li>
-            <li><a href="pricing.html">Planuri și prețuri</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Legal</strong>
-          <ul>
-            <li><a href="privacy.html">Politică de confidențialitate</a></li>
-            <li><a href="terms.html">Termeni și condiții</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Contact</strong>
-          <p>✉️ microbot.data@gmail.com</p>
-          <p>⏱ Răspuns în 24-48h</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  </div>
 </body>
 </html>
